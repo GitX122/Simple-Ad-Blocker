@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Opener</title>
+</head>
+<body>
+    <h1>Link Opener</h1>
+    <input type="text" id="url" placeholder="Enter URL here" />
+    <button onclick="openLink()">Open Link</button>
+
+    <script>
+        function openLink() {
+            const url = document.getElementById('url').value;
+            // Basic URL validation
+            if (url) {
+                window.open(url, '_blank');
+            } else {
+                alert('Please enter a valid URL');
+            }
+        }
+    </script>
+</body>
+</html>
